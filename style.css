@@ -1,0 +1,19 @@
+legend {background: inherit;}
+/* On utilise le background: inherit pour que la couleur du background vienne sur la légende */
+
+fieldset, li {margin-bottom: 5px;}
+/* margin-bottom va nous servir a créer un espace par le bas entre chaque formulaire et chaque ligne de liste */
+
+textarea {resize: none;}
+/* resize: none; est utilisé ici pour empécher le changement de taille du champs de texte (textarea) à la souris */
+
+p
+{
+   margin:3px;
+}
+
+#field1 {background-color: #2574A9;}
+
+#field2 {background-color:#9A12B3;}
+
+#field3 {background-color: #DB0A5B;}

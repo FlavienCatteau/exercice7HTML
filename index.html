@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+     <!-- Balise Link pour lier le fichier CSS au fichier HTML -->
+    <title>Exercice 7</title>
+  </head>
+  <body>
+    <Form action="exercice6/index.html">
+      <fieldset id="field1">
+        <!-- Balise <fieldset> pour créer une zone pouvant contenir un formulaire et autres ... -->
+        <legend>Votre Identité</legend>
+        <!-- La balise <legend> est utilisé pour mettre une légende a fieldset   -->
+          <ol>
+            <!-- La balise <ol> est utilisé pour créer des listes ordonnées -->
+            <li><label for="Identité">Nom :</label>
+              <!-- La balise <label> est utilisé pour ajouter un libellé au formulaire -->
+                <input type="text"; placeholder="Votre Nom"; name="Identité">
+                <!-- Le <input> va nous servir a créer le champs/bouton celon le type choisi. A savoir qu'il est possible d'ajouter un placeholder pour avoir une écriture griser dans le formulaire  -->
+            </li>
+           <li><label for="Identité">Prénom :</label>
+                <input type="text"; placeholder="Votre Prénom"; name="Identité">
+           </li>
+           <li><label for="Identité">Adresse mail :</label>
+              <input type="email"; placeholder="Votre adresse mail"; name="Identité">
+              <!-- J'utilise le type="email" afin que n'importes quels navigateur puissent reconnaitre que ce formulaire demande une adresse email (sur firefox le champs deviendrait rouge si ce qu'on y rentre n'est pas une adresse mail). Pour les smartphone cela permetra aussi que le clavier s'ouvre en mode adresse email. -->
+           </li>
+         </ol>
+
+      </fieldset>
+      <fieldset id="field2">
+        <legend>Adresse de Livraison</legend>
+          <ol>
+            <li><label for="Adresse de Livraison">Adresse :</label>
+              <textarea name="Adresse de Livraison"; id="Adresse"; rows="6"></textarea>
+              <!-- le <textarea> va servir a créer un champs de texte libre avec possibilité de l'agrandir sur le navigateur directement à la souris sauf si on lui refuse cette possibilité en le bloquant via le CSS. -->
+            </li>
+            <li><label for="Code Postal">Code Postal :</label>
+              <input type="text"; placeholder="Votre Code Postal"; name="Code Postal"; maxlength="5">
+            </li>
+            <li><label for="Ville">Ville :</label>
+              <input type="text"; placeholder="Votre Ville"; name="Ville">
+            </li>
+          </ol>
+      </fieldset>
+      <fieldset id="field3">
+        <legend>Information et Règlement</legend>
+          <ol>
+            <li><label for="CB">Type de Carte Bancaire :</label>
+              <p>
+                <input type="radio" name="CB"; id="CB"; value="VISA">VISA</input>
+              </p>
+              <p>
+                <input type="radio" name="CB"; id="CB"; value="Mastercard">Mastercard</input>
+              </p>
+                <!-- Plusieurs choses à remarquer ici, tout d'abord le type qui ici est "radio" permet de créer une possibilité de choix à cocher et grâce au name qui est le même pour les deux choix, cela nous permet de ne pouvoir choisir qu'un choix sur les deux et pas pouvoir cocher les deux en même temps. -->
+            </li>
+            <li><label for="numcarte">Numéro de Carte :</label>
+                <input type="text"; placeholder="Numéro de Carte"; name="numcarte">
+            </li>
+            <li><label for="Code de Sécurité">Code de sécurité :</label>
+                  <input type="text"; placeholder="Code de sécurité"; name="Code de sécurité">
+            </li>
+            <li><label for="Nom du Titulaire">Nom du Titulaire :</label>
+                  <input type="text"; placeholder="Nom du Titulaire"; name="Nom du Titulaire">
+            </li>
+          </ol>
+      </fieldset>
+        <label for="achat">
+          <input type="submit" name="Achat" value="J'achète !">
+          <!-- le submit permet de créer un bouton. Ici le bouton "J'achète !" -->
+    <!--<form action="exercice6/index.html">-->
+    
+    </form>
+</body>
+</html>
